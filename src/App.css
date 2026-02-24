@@ -1,9 +1,36 @@
 body {
   margin: 0;
+  padding: 20px;
   font-family: system-ui, sans-serif;
+  background: #f7f9f9;
+  min-height: 100vh;
 }
 
-h1 {
-  text-align: center;
-  margin-top: 40vh;
+.masonry {
+  column-count: 1;
+  column-gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (min-width: 640px) {
+  .masonry {
+    column-count: 2;
+  }
+}
+
+@media (min-width: 960px) {
+  .masonry {
+    column-count: 3;
+  }
+}
+
+.tweet-card {
+  break-inside: avoid;
+  margin-bottom: 20px;
+}
+
+/* Hide duplicate tweets in the layout */
+.react-tweet-theme {
+  margin: 0 !important;
 }
