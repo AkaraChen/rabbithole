@@ -2,7 +2,10 @@ import Masonry from 'react-masonry-css';
 import { Tweet } from 'react-tweet';
 import 'react-tweet/theme.css';
 import './App.css';
-import tweetIds from './data.json';
+import data from './data.json';
+
+// reverse the data to show the most recent tweets first
+const tweetIds = data.reverse()
 
 const App = () => {
   const breakpointColumnsObj = {
