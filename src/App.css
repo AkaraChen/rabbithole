@@ -7,26 +7,17 @@ body {
 }
 
 .masonry {
-  column-count: 1;
-  column-gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
+  display: flex;
+  margin-left: -10px;
+  width: 100%;
 }
 
-@media (min-width: 640px) {
-  .masonry {
-    column-count: 2;
-  }
-}
-
-@media (min-width: 960px) {
-  .masonry {
-    column-count: 3;
-  }
+.masonry-column {
+  padding-left: 10px;
+  background-clip: padding-box;
 }
 
 .tweet-card {
-  break-inside: avoid;
   margin-bottom: 20px;
 }
 
