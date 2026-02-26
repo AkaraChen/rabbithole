@@ -5,7 +5,7 @@ import './App.css';
 import data from './data.json';
 
 // reverse the data to show the most recent tweets first
-const tweetIds = data.reverse()
+const tweetIds = Array.from(new Set(data.reverse()));
 
 const App = () => {
   const breakpointColumnsObj = {
