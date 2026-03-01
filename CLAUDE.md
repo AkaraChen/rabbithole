@@ -63,6 +63,6 @@ src/
 
 ## Adding Tweets
 
-To add more tweets, append new tweet IDs (the numeric string from a tweet URL) to the array in `src/data.json`. The masonry layout will automatically adjust.
+To add more tweets, append new tweet IDs (the numeric string from a tweet URL) to the **END** of the array in `src/data.json`. The app automatically reverses the array to show the most recent tweets first.
 
-Example: From `https://twitter.com/username/status/1234567890123456789`, extract `1234567890123456789`.
+Example: From `https://twitter.com/username/status/1234567890123456789`, extract `1234567890123456789` and add it to the end of the array.
