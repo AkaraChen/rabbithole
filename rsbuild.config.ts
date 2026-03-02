@@ -10,6 +10,7 @@ export default defineConfig({
       { tag: 'meta', attrs: { name: 'description', content: 'A fan-made unofficial Rabbit Hole website' } },
       { tag: 'meta', attrs: { name: 'author', content: 'akr' } },
       { tag: 'link', attrs: { rel: 'canonical', href: 'https://rabbithole.akr.moe' } },
+      { tag: 'link', attrs: { rel: 'alternate', type: 'application/rss+xml', title: 'RSS Feed', href: '/rss.xml' } },
       // Open Graph
       { tag: 'meta', attrs: { property: 'og:type', content: 'website' } },
       { tag: 'meta', attrs: { property: 'og:title', content: 'Rabbit Hole' } },

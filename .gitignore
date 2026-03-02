@@ -7,6 +7,10 @@
 node_modules
 dist/
 
+# Generated files
+public/rss.xml
+public/sitemap.xml
+
 # Profile
 .rspack-profile-*/
 

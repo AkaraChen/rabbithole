@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "rsbuild build",
+    "build": "node scripts/generate-rss.js && node scripts/generate-sitemap.js && rsbuild build",
     "check": "biome check --write",
     "dev": "rsbuild dev --open",
     "format": "biome format --write",
@@ -23,6 +23,7 @@
     "@rsbuild/plugin-react": "^1.4.2",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
+    "feed": "^5.2.0",
     "typescript": "^5.9.3"
   }
 }
